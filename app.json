@@ -9,7 +9,8 @@
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#f0145a",
     "navigationBarTitleText": "微信电商",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "backgroundColor":"#f0145a"
   },
   "tabBar":{
     "color":"#858585",

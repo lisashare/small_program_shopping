@@ -268,7 +268,7 @@ Page({
         isHideLoadMore: true,
         recommends:recommends
       })
-    }, 1000)
+    }, 2000)
   },
 
   /**

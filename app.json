@@ -1,11 +1,12 @@
 {
   "pages": [
-    "pages/detail/detail",
+    "pages/mine/mine",
     "pages/classify/classify",
     "pages/home/home",
     "pages/cart/cart",
-    "pages/mine/mine"
- 
+    
+    "pages/detail/template/quantity",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

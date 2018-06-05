@@ -1,3 +1,5 @@
+var app = getApp();
+
 Page({
   data: {
     isLike: false,
@@ -23,13 +25,14 @@ Page({
       "http://7xnmrr.com1.z0.glb.clouddn.com/detail_5.jpg",
       "http://7xnmrr.com1.z0.glb.clouddn.com/detail_6.jpg",
     ],
+    showDialog:false
   },
-  //预览图片
+  //图片预览功能
   previewImage: function (e) {
     var current = e.target.dataset.src;
 
     wx.previewImage({
-      current: current, // 当前显示图片的http链接  
+      current: current,       // 当前显示图片的http链接  
       urls: this.data.imgUrls // 需要预览的图片http链接列表  
     })
   },
@@ -41,6 +44,7 @@ Page({
   },
   // 跳到购物车
   toCar() {
+    // wx.switchTab(OBJECT) 跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面
     wx.switchTab({
       url: '/pages/cart/cart'
     })
@@ -48,9 +52,14 @@ Page({
   // 立即购买
   immeBuy() {
     wx.showToast({
-      title: '购买成功',
-      icon: 'success',
-      duration: 2000
+      title: '购买成功',  //提示用户的内容
+      icon: 'success',   //loading 两个属性
+      duration: 2000      
     });
   },
+  toggleDialog () {
+ 
+    this.setData({ showDialog:!this.data.showDialog })
+    
+  }
 })

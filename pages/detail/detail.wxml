@@ -1,5 +1,5 @@
 <!--pages/detail/detail.wxml-->
-
+<import src="./template/quantity.wxml" />
 <view class="page detail">
 <!-- banner -->
     <swiper 
@@ -51,6 +51,10 @@
 
         <button class="button-red" bindtap="immeBuy" formType="submit">立即购买</button>
     </view>
+<!-- 引用模板 -->
+    <template is="msgItem" data="{{ showDialog:showDialog }}">
+
+    </template>
 
 </view>
 

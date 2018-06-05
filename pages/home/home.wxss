@@ -57,10 +57,6 @@ swiper swiper-item image {
   padding-top: 20rpx;
   font-size: 26rpx;
 }
-.separate {
-  height: 15rpx;
-  background-color: #f2f2f2;
-}
 .category-title {
   display: flex;
   flex-direction: column;

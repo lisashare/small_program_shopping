@@ -1,0 +1,15 @@
+
+<view class="page order">
+    <view class="tabbar">
+        <view  class = "{{ 'tab'+ (selectedId===item.id?' active':'') }}" 
+        data-id = "{{ item.id }}"
+        bindtap = "handleZanTabChange"
+        wx:for = "{{ tablist }}" 
+        wx:key = "item.id">{{ item.title }}</view> 
+    </view>
+    <view class="tab-content">
+        <image class="tab-image" src="../../../images/order/non_cart.png"/>
+        <text>您还没有相关订单哦！</text>
+    </view>
+    
+</view>

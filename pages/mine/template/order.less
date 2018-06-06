@@ -1,0 +1,46 @@
+/* pages/mine/template/order.wxss */
+.tab-content{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    .tab-image{
+        width: 50%;
+        height:360rpx;
+        margin-top: 130rpx;
+        margin-bottom: 50rpx;
+    }
+}
+.tabbar{
+    display: flex;
+    justify-content: space-around;
+    background:#f0145a;
+    .tab{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#dfcccc;
+        font-size:30rpx;
+        height: 90rpx;
+        display: relative;
+        // box-sizing: border-box;
+        &.active{
+            border-bottom:4rpx solid #fff;;
+            color:#fff;
+        }
+
+        // // 顶部导航字体颜色
+        // &.active{
+        //     color:#fff;
+        // }
+        // // 顶部指示条属性
+        // &.active:after{
+        //     content:"";
+        //     display: block;
+        //     position: absolute;
+        //     right:0;bottom:0;left:0;
+        //     height:6rpx;
+        //     background:#000;
+        // } 
+    }
+    
+}

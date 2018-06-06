@@ -1,9 +1,9 @@
 {
-  "pages": [
-    "pages/mine/mine",
-    "pages/classify/classify",
+  "pages": [ 
     "pages/home/home",
     "pages/cart/cart",
+    "pages/mine/mine",
+    "pages/classify/classify",  
     "pages/detail/template/quantity",
     "pages/detail/detail",
     "pages/mine/template/order"

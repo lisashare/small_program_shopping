@@ -61,5 +61,5 @@ Page({
  
     this.setData({ showDialog:!this.data.showDialog })
     
-  }
+  },
 })

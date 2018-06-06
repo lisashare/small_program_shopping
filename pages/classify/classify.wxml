@@ -28,7 +28,7 @@
             >
                 <view class="nav_right_items">
                     <!-- 界面跳转 -->
-                    <navigator url = "../detail/detail">
+                    <navigator url = "../detail/detail" hover-class="none">
                         <image src = "{{ item.image }}" /><text>{{ item.name }}</text>
                     </navigator>
                 </view>

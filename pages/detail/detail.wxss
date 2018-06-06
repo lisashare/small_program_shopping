@@ -48,7 +48,6 @@
 }
 .row {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 .border-line {
@@ -70,9 +69,25 @@
   left: 300rpx;
   margin: 1rpx;
 }
-.row .quantity-position {
+.quantity-position {
   position: absolute;
   right: 30rpx;
+  display: flex;
+}
+.add,
+.reduce,
+.num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60rpx;
+  height: 50rpx;
+  background: #fff;
+  border: 2rpx solid #333;
+}
+.num {
+  border-left: 0;
+  border-right: 0;
 }
 swiper {
   height: 500rpx;

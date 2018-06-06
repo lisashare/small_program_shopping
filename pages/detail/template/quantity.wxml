@@ -17,7 +17,7 @@
             <view class="row">
                 <text >购买数量</text>
                 <view class="quantity-position">
-                <!-- <template is="quantity" data="{{ ...quantity1, componentId: 'quantity1' }}" /> -->
+                <template is="quantity" data="{{ ...quantity1, componentId: 'quantity1'}}" />
                 </view>
             </view>
             <text class="border-line"></text>
@@ -28,5 +28,9 @@
     </view>
 </template>
 <template name="quantity">
-    123
+    
+    <view class="minus" bindtap="handleQuantityChange" data-componentId="{{componentId}}" >-</view>
+    <input type="number" class="number" value="{{ quantity }}"></input>
+    <view class="plus" bindtap="handleQuantityChange">+</view>
+  
 </template>

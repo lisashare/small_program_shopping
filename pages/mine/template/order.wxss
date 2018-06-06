@@ -22,7 +22,6 @@
   color: #dfcccc;
   font-size: 30rpx;
   height: 90rpx;
-  display: relative;
 }
 .tabbar .tab.active {
   border-bottom: 4rpx solid #fff;

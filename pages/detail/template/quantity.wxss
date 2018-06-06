@@ -47,7 +47,6 @@
 }
 .row {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 .border-line {
@@ -69,7 +68,24 @@
   left: 300rpx;
   margin: 1rpx;
 }
-.row .quantity-position {
+.quantity-position {
   position: absolute;
   right: 30rpx;
+  display: flex;
+}
+.minus,
+.plus,
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60rpx;
+  height: 50rpx;
+  background: #fff;
+  border: 2rpx solid #333;
+  display: inline-block;
+}
+.number {
+  border-left: 0;
+  border-right: 0;
 }
